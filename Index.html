@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIGIVA</title>
+  <link img src="https://drive.google.com/thumbnail?id=1IF_OmRUyae_gjH2IxuSwFy32nwCna9mY&sz=h80" alt="Logo Kecamatan"
+              class="h-9 w-auto object-contain"
+              onerror="this.parentElement.style.display='none'"/>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eee;
+      overflow: hidden; /* Mencegah scroll ganda */
+    }
+
+    .iframe-container {
+      width: 100%;
+      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe
+      id="app"
+      src="https://script.google.com/macros/s/AKfycbz28Bi5nQAt1I_CZjXegSR7a3L-3nGjRbFzbfAedJCUg6EywEgCsLFedlQ-U-8exA_O/exec"
+      scrolling="yes"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allow="fullscreen; camera; microphone; display-capture; geolocation;">
+    </iframe>
+  </div>
+</body>
+</html>
